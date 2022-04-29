@@ -1,0 +1,528 @@
+
+
+/*----- icons,generals -----*/
+.mobileimg {
+    display: none;
+}
+.fa-music{
+    color: #fff;
+    font-size: 1.4rem;
+}
+.fa-check{
+    color: #fff;
+    margin-right: 6px;
+}
+.fa-envelope{
+    color: #fff;
+    font-size: 1.4rem;
+    margin-right: 1rem;
+}
+.fa-file-contract,
+.fa-instagram-square,
+.fa-facebook{
+    color: #fff;
+    font-size: 1.2rem;
+    margin-right: 2px;
+}
+.fa-circle-play{
+    font-size: 1.6rem;
+}
+
+.container {
+    padding:0 6rem ;
+    margin: 0 auto;
+}
+.feature-sections {
+    background-color: #000;
+}
+.download-icon {
+    width: 70%;
+}
+
+
+/* ----- header section goes here -----*/
+nav{
+    display: block;
+    position: relative;
+    margin: 12px;
+}
+
+.mobile-menu{
+    display: none;
+}
+.hamburger::before{
+    transform: translateY(-10px);
+    transition: all 0.3s ease-in-out;
+}
+.hamburger::after{
+    transform: translateY(10px);
+    transition: all 0.3s ease-in-out;
+}
+.hamburger::before.open{
+    color: #000;
+    transform: rotate(45deg);
+    transition: all 0.3s ease-in-out;
+}
+.open .hamburger {
+    /* transform: translateX(24px); */
+    background: transparent;
+    transition: all 0.3s ease-in-out;
+}
+
+.open .hamburger::before{
+    transform: rotate(40deg);
+    transition: all 0.3s ease-in-out;
+}
+.open .hamburger::after{
+    transform: rotate(-40deg);
+    transition: all 0.3s ease-in-out;
+}
+
+
+.header-section {
+    padding-bottom: 2rem;
+    height: 80vh;
+    width: 100%;
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    background-image: url(./image/edwin-andrade-6liebVeAfrY-unsplash.jpg);
+    background-size: cover;
+    box-shadow: inset 12px -120px 180px 30px #000000;
+}
+.logo {
+    margin:8px 0px 0px 16px;
+}
+.hero-section {
+    padding: 0 4.2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.hero-title {
+    margin-top: 4.6rem;
+    color: #fff;
+    font-size: 4.2rem;
+    font-family:'Noto Sans TC' ;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+}
+.hero-subtitle {
+    margin-top: 1rem;
+    color: #fff;
+    font-size: 4.2rem;
+    font-family:'Noto Sans TC' ;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+}
+.hero-description {
+    font-size: 1.2em;
+    font-weight: 300;
+    letter-spacing: 2px;
+    margin-top: 2rem;
+    color: #fff;
+    line-height: 1.6;
+    text-align: center;
+}
+.hero-call-to-actions{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.btn-scroll{
+    font-weight: 700;
+    font-size: 1.4rem;
+    margin-top: 2rem;
+    text-decoration: none;
+    padding: 12px 60px;
+    color: #fff;
+    background-color: #000;
+    border: 1px solid #fff;
+    border-radius: 6px;
+    transition: all 0.3s ease-in-out;
+}
+.btn-hero {
+    font-weight: 700;
+    font-size: 1.4rem;
+    margin-top: 2rem;
+    text-decoration: none;
+    padding: 12px 60px;
+    color: #fff;
+    background: linear-gradient(270deg, rgb(216, 203, 168) 0%, rgba(163,152,124,1) 50%, rgb(116, 109, 88) 100%);
+    border-radius: 6px;
+    transition: all 0.3s ease-in-out;
+}
+.btn-hero:hover {
+    border-radius: 6px;
+    transition: all 0.3s ease-in-out;
+    transform: translateY(-8px);
+    background: linear-gradient(90deg, rgb(216, 203, 168) 0%, rgba(163,152,124,1) 50%, rgb(116, 109, 88) 100%);
+}
+.streams{
+    margin: 4rem 0 2rem 1.2rem;
+    width: 100%;
+    display: flex;
+    flex-shrink: 0;
+    flex-grow: 1;
+    flex-wrap: w4rap;
+    gap: 2rem;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+}
+
+.streams img {
+    width: 20%;
+}
+
+/* ----- header section goes here -----*/
+
+
+/*----- feature section -----*/
+.feature-intro {
+    padding:0;
+    width: 100%;
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+.feature-intro::before{
+    content:"";
+    display: inline-block;
+    height:250px;
+    width:250px;
+    background: url(./image/earphone-top-05.png) no-repeat;
+    background-size: 250px 250px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.feature-title {
+    color: #fff;
+    font-size: 4rem;
+    text-align: center;
+    font-weight: 700;
+}
+.feature-subtitle {
+    color: #fff;
+    font-size: 4rem;
+    text-align: center;
+    font-weight: 700;
+}
+.feaure-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.feaure-content p {
+    margin-top: 1.2rem;
+    color: #fff;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    text-align: center;
+}
+.feature-intro img{
+    margin-top: 2rem;
+    width: 90%;
+}
+.feature-1 {
+    display: grid;
+    grid-template: 0.5fr 2fr /2fr 1fr;
+}
+
+/*----- feature 1 top left corner -----*/
+
+.feature-1--topleft{
+    margin-top: 2rem;
+    grid-template-columns: 1/2;
+    grid-template-rows: 1/2;
+    padding-bottom: 2.4rem;
+}
+.feature-1--topleft h3 {
+    color: #fff;
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+.feature-1--topleft h4{
+    color: rgba(163,152,124,1);
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+/*----- feature 1 middle left corner -----*/
+
+.feature-1--middle {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    color: #fff;
+}
+.feature-sections{
+    position: relative;
+    overflow: hidden;
+}
+.feature-sections::after {
+    content: "";
+    display: inline-block;
+    transform: rotate(24deg);
+    background: url(./image/耳機線2.png) no-repeat;
+    height:100%;
+    width:100%;
+    background-size: 640px;
+    position: absolute;
+    left: -800px;
+    bottom: -1050px;
+}
+
+.feature-1--middle p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 1.2rem;
+}
+.feature-1--middle img {
+    width: 100%;
+}
+
+/*----- feature 1 right side -----*/
+.feature-1--right {
+    grid-column: 2/3;
+    grid-row: 1/-1;
+    background: url(./image/streaming\ bg.jpg) no-repeat;
+    background-size: 100%
+}
+
+/*----- feature 2 starts here -----*/
+
+.feature-2 {
+    display: grid;
+    grid-template: 1fr 1fr / 1.5fr 2.5fr
+}
+.feature-2--right {
+    grid-column: 2/3;
+    grid-row:1/-1;
+    display: flex;
+    flex-direction: column;
+}
+.high-res-logos {
+    margin-top: 14px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 1;
+}
+.high-res-logos img {
+    filter: brightness(1) invert(1);
+    width: 30%;
+}
+.feature-2--right h3 {
+    margin-top: 2rem;
+    color: #fff;
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+    align-self: flex-start;
+}
+.feature-2--right h4{
+    color: rgba(163,152,124,1);
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+    align-self: flex-start;
+}
+.feature-2--right p {
+    margin-top: 1.2rem;
+    color: #fff;
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 1.2rem;
+}
+.feature-2--left {
+    grid-column: 1/2;
+    grid-row: 1/-1;
+}
+.feature-2--left img {
+    width: 100%;
+}
+.price-section {
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    justify-content: center;
+    align-items: center;
+}
+.price-section h2 {
+    color: #fff;
+    font-size: 4.2rem;
+    font-weight: 700;
+}
+.price-section h3 {
+    color: #fff;
+    font-size: 4.2rem;
+    font-weight: 700;
+}
+.price-section h4 {
+    margin-top: 2rem;
+    margin-bottom: 1.2rem;
+    color: #fff;
+    font-size: 2.4rem;
+    font-weight: 700;
+}
+.price-section p {
+    margin-top: 1.2rem;
+    color: #fff;
+    font-size: 1.2rem;
+    text-align: center;
+    line-height: 1.8;
+}
+.price-section-trial {
+    margin-top: 1.2rem;
+    color: #fff;
+    padding: 18px 8rem;
+    background: linear-gradient(270deg, rgb(216, 203, 168) 0%, rgba(163,152,124,1) 50%, rgb(116, 109, 88) 100%);
+    text-decoration: none;
+    font-size: 1.8rem;
+    font-weight: 700;
+    border-radius: 6px;
+}
+.price-section-cards {
+    display: flex;
+    gap: 2.4rem;
+}
+.price-card {
+    width: 60%;
+    overflow: hidden;
+    margin-top: 1.2em;
+    background-color: #000;
+    border: 2px solid rgb(116, 109, 88);
+    padding: 3.2rem;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    transition: all .3s ease-in-out;
+    position: relative;
+}
+.price-card::before {
+    content: "精選";
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: 700;
+    padding: 1rem 4.2rem 1rem 10rem;
+    background-color: rgb(116, 109, 88);
+    position: absolute;
+    top: -25px;
+    right: -55px;
+    transform: rotate(42deg);
+}
+.price-card h3 {
+    margin-top: 1rem;
+    margin-bottom: 1.2rem;
+    color: #fff;
+    font-size: 2rem;
+}
+.price-card li {
+    margin-top: 0.6rem;
+    list-style: none;
+    color: #fff;
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+.price-card li ul {
+    margin-top: 12px;
+}
+.price-card--btn {
+    text-decoration: none;
+    margin-top: 1.4rem;
+    padding: 12px 36px;
+    border-radius: 6px;
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: 700;
+    background: linear-gradient(270deg, rgb(216, 203, 168) 0%, rgba(163,152,124,1) 50%, rgb(116, 109, 88) 100%);
+}
+.price-card--btn:hover{
+    transform: translateY(-15px);
+    transition: all .3s ease-in-out;
+}
+
+.footer-section{
+    margin-top: -2.4rem;
+    padding: 6rem;
+    background-color: #000;
+    opacity: 0.94;
+}
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.footer-support {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    grid-column: 1/2;
+}
+.footer-title {
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+.footer-list {
+    align-self: center;
+    list-style: none;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.footer-list li {
+    padding-bottom: 1.2rem;
+}
+.footer-list a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+}
+.footer-socials{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    grid-column: 2/3;
+    align-items: center;
+}
+.footer-downloads {
+    display: flex;
+    flex-direction: column;
+    gap:12px;
+    grid-column: 3/4;
+}
+.footer-downloads li {
+    margin-left: 3rem;
+}
+.copyright-section {
+    margin: 2.4rem auto;
+    padding-top: 2rem;
+    width: 80%;
+    border-top: 1px solid rgb(134, 133, 133);
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+.copyright-section p {
+    color: #fff;
+}
+.copyright-section img {
+    width: 20%;
+}
+
